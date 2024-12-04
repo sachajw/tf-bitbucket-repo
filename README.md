@@ -3,6 +3,7 @@
 This is a Terraform provider for managing resources within a Bitbucket Cloud account.
 
 ## Getting Started
+
 As this provider is published to the public [Terraform Registry](https://registry.terraform.io/providers/zahiar/bitbucket),
 you can install it like so (for Terraform 0.14+):
 
@@ -53,7 +54,7 @@ Simply run `make build`, and it will compile and create a binary, as well as pri
 on how to configure Terraform to use this locally built provider.
 
 ```shell
-$ make build
+make build
 ```
 
 ### Testing
@@ -61,7 +62,7 @@ $ make build
 #### Unit Tests
 
 ```shell
-$ make test
+make test
 ```
 
 ### Acceptance Tests
@@ -81,7 +82,7 @@ tests to run, as Bitbucket's API will reject the account owner's UUID.
 If you have two-factor authentication enabled, then be sure to set up an [app password](https://support.atlassian.com/bitbucket-cloud/docs/app-passwords/) and use that instead.
 
 ```shell
-$ BITBUCKET_USERNAME=myUsername BITBUCKET_PASSWORD=myPassword BITBUCKET_MEMBER_ACCOUNT_UUID=myMemberUUID make testacc
+BITBUCKET_USERNAME=myUsername BITBUCKET_PASSWORD=myPassword BITBUCKET_MEMBER_ACCOUNT_UUID=myMemberUUID make testacc
 ```
 
 ### Documentation
